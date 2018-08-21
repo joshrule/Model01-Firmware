@@ -1,6 +1,6 @@
 # Josh Rule's Keyboardio Model 01 Firmware Sketch
 
-_A personalized firmware sketch for the Keyboardio Model 01_
+_This is [Josh Rule]'s personalized firmware sketch for the [Keyboardio Model 01]._
 
 ## Usage
 
@@ -15,16 +15,20 @@ cd Model01-Firmware
 make flash
 ```
 
-When the builder tells you to hit Enter to continue, hold down "Prog" in the top left corner of your keyboard and hit Enter.
+When the builder tells you to hit Enter to continue, hold down `Prog` (upper-left corner of the keyboard) and tap `Enter`. Continue holding `Prog` until the keyboard reboots and `LED` pulses blue.
 
 ### Option 2: From the Arduino IDE
 
 Open this sketch (i.e. `Model01-Firmware.ino`).
 
-Click the Upload button or press `Ctrl-U`.
+Click the Upload button or tap `Ctrl-U`.
 
-Hold down the "Prog" key in the top left corner of your keyboard, until the compile finishes and the upload begins.
+Hold down `Prog` (upper-left corner of the keyboard) until the keyboard reboots and `LED` pulses blue.
 
+[Josh Rule]: https://www.joshrule.com
+           "Josh Rule"
+[Keyboardio Model 01]: https://keyboard.io
+           "Keyboardio"
 [Arduino]: https://arduino.cc
            "Arduino"
 [reference sketch]: https://github.com/keyboardio/Model01-Firmware
