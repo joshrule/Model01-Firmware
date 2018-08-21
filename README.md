@@ -4,7 +4,7 @@ _A personalized firmware sketch for the Keyboardio Model 01_
 
 ## Usage
 
-Sett up your [Arduino] environment as described in the [reference sketch].
+Set up your [Arduino] environment as described in the [reference sketch].
 
 Also, make sure your Model 01 is connected to your computer.
 
@@ -24,3 +24,8 @@ Open this sketch (i.e. `Model01-Firmware.ino`).
 Click the Upload button or press `Ctrl-U`.
 
 Hold down the "Prog" key in the top left corner of your keyboard, until the compile finishes and the upload begins.
+
+[Arduino]: https://arduino.cc
+           "Arduino"
+[reference sketch]: https://github.com/keyboardio/Model01-Firmware
+                    "GitHub - keyboardio/Model01-Firmware"
