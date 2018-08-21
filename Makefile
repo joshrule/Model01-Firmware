@@ -16,7 +16,6 @@ ARDUINO_INSTALLED_ENV=$(shell ls -dt $(PACKAGE_DIR)/packages/keyboardio/hardware
 MANUALLY_INSTALLED_ENV=$(shell ls -dt $(SKETCHBOOK_DIR)/hardware/keyboardio/avr 2>/dev/null |head -n 1)
 
 
-
 ifneq ("$(wildcard $(ARDUINO_INSTALLED_ENV)/boards.txt)","")
 
 ifneq ("$(wildcard $(MANUALLY_INSTALLED_ENV)/boards.txt)","")
@@ -43,8 +42,6 @@ endif
 BOARD_HARDWARE_PATH = $(ARDUINO_INSTALLED_ENV)
 KALEIDOSCOPE_PLUGIN_MAKEFILE_DIR ?= build-tools/makefiles/
 KALEIDOSCOPE_BUILDER_DIR ?= $(ARDUINO_INSTALLED_ENV)/libraries/Kaleidoscope/bin/
-
-
 
 endif
 
