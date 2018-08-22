@@ -1,6 +1,13 @@
 # Josh Rule's Keyboardio Model 01 Firmware Sketch
 
-_This is [Josh Rule]'s personalized firmware sketch for the [Keyboardio Model 01]._
+This is [Josh Rule]'s work-in-progress personalized firmware sketch for the [Keyboardio Model 01].
+
+## Notes
+
+- `Control` and `Alt` have been moved to be the innermost keys on each side.
+- The thumb clusters have been reorganized.
+  - Left: `Tab`, `Backspace`, `Shift`, `Escape`
+  - Right: `GUI`, `Shift`, `Space`, `Enter`
 
 ## Usage
 
