@@ -4,6 +4,7 @@ This is [Josh Rule]'s work-in-progress personalized firmware sketch for the [Key
 
 ## Notes
 
+- Qukey `GUI`, `Alt`, `Control`, and `Shift` have been placed on the home row.
 - `Control` and `Alt` have been moved to be the innermost keys on each side.
 - The thumb clusters have been reorganized.
   - Left: `Tab`, `Backspace`, `Shift`, `Escape`
@@ -22,7 +23,7 @@ cd Model01-Firmware
 make flash
 ```
 
-When the builder tells you to hit Enter to continue, hold down `Prog` (upper-left corner of the keyboard) and tap `Enter`. Continue holding `Prog` until the keyboard reboots and `LED` pulses blue.
+When the builder tells you to hit Enter to continue, hold down `Prog` (upper-left corner of the keyboard) and tap `Enter`. Continue holding `Prog` until the keyboard reboots and begins flashing red LEDs.
 
 ### Option 2: From the Arduino IDE
 
@@ -30,7 +31,7 @@ Open this sketch (i.e. `Model01-Firmware.ino`).
 
 Click the Upload button or tap `Ctrl-U`.
 
-Hold down `Prog` (upper-left corner of the keyboard) until the keyboard reboots and `LED` pulses blue.
+Hold down `Prog` (upper-left corner of the keyboard) until the keyboard reboots and begins flashing red LEDs.
 
 [Josh Rule]: https://www.joshrule.com
            "Josh Rule"
