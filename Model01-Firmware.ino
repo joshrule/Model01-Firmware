@@ -11,6 +11,9 @@
 // The Kaleidoscope core
 #include "Kaleidoscope.h"
 
+// Support for dual use keys
+#include <Kaleidoscope-Qukeys.h>
+
 // Support for keys that move the mouse
 #include "Kaleidoscope-MouseKeys.h"
 
@@ -130,17 +133,17 @@ enum { PRIMARY, NUMPAD, FUNCTION }; // layers
 KEYMAPS(
 
   [PRIMARY] = KEYMAP_STACKED
-  (___,          Key_1, Key_2, Key_3, Key_4, Key_5, Key_LEDEffectNext,
-   Key_Backtick, Key_Q, Key_W, Key_E, Key_R, Key_T, Key_LeftControl,
-   ___,          Key_A, Key_S, Key_D, Key_F, Key_G,
-   ___,          Key_Z, Key_X, Key_C, Key_V, Key_B, Key_LeftAlt,
+  (___,          Key_1,    Key_2,    Key_3,    Key_4,    Key_5, Key_LEDEffectNext,
+   Key_Backtick, Key_Q,    Key_W,    Key_E,    Key_R,    Key_T, Key_LeftControl,
+   ___,          GUI_T(A), ALT_T(S), CTL_T(D), SFT_T(F), Key_G,
+   ___,          Key_Z,    Key_X,    Key_C,    Key_V,    Key_B, Key_LeftAlt,
    Key_Tab, Key_Backspace, Key_LeftShift, Key_Escape,
    ShiftToLayer(FUNCTION),
 
-   ___,             Key_6, Key_7, Key_8,     Key_9,      Key_0,         LockLayer(NUMPAD),
-   Key_LeftControl, Key_Y, Key_U, Key_I,     Key_O,      Key_P,         Key_Equals,
-                    Key_H, Key_J, Key_K,     Key_L,      Key_Semicolon, Key_Quote,
-   Key_LeftAlt,     Key_N, Key_M, Key_Comma, Key_Period, Key_Slash,     Key_Minus,
+   ___,             Key_6,    Key_7,    Key_8,     Key_9,            Key_0,         LockLayer(NUMPAD),
+   Key_LeftControl, Key_Y,    Key_U,    Key_I,     Key_O,            Key_P,         Key_Equals,
+   Key_H,           SFT_T(J), CTL_T(K), ALT_T(L),  GUI_T(Semicolon), Key_Quote,
+   Key_LeftAlt,     Key_N,    Key_M,    Key_Comma, Key_Period,       Key_Slash,     Key_Minus,
    Key_LeftGui, Key_LeftShift, Key_Spacebar, Key_Enter,
    ShiftToLayer(FUNCTION)),
 
@@ -288,6 +291,10 @@ USE_MAGIC_COMBOS({.action = toggleKeyboardProtocol,
 // The order can be important. For example, LED effects are
 // added in the order they're listed here.
 KALEIDOSCOPE_INIT_PLUGINS(
+
+  // The dual use keys
+  Qukeys,
+
   // The boot greeting effect pulses the LED button for 10 seconds after the keyboard is first connected
   BootGreetingEffect,
 
@@ -356,6 +363,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
  * Kaleidoscope and any plugins.
  */
 void setup() {
+  // setup qukeys
+  Qukeys.setTimeout(200);
+  Qukeys.setReleaseDelay(20);
+
   // First, call Kaleidoscope's internal setup function
   Kaleidoscope.setup();
 
