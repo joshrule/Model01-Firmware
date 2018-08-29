@@ -73,8 +73,7 @@
   * a macro key is pressed.
   */
 
-enum { MACRO_VERSION_INFO,
-       MACRO_ANY
+enum { MACRO_VERSION_INFO
      };
 
 
