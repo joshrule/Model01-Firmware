@@ -333,7 +333,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
  */
 void setup() {
   // setup qukeys
-  Qukeys.setTimeout(200);
+  Qukeys.setTimeout(150);
   Qukeys.setReleaseDelay(20);
 
   // First, call Kaleidoscope's internal setup function
