@@ -125,14 +125,14 @@ KEYMAPS(
    Key_Backtick, Key_Q,    Key_W,    Key_E,    Key_R,    Key_T, ___,
    ___,          GUI_T(A), ALT_T(S), CTL_T(D), SFT_T(F), Key_G,
    ___,          Key_Z,    Key_X,    Key_C,    Key_V,    Key_B, ___,
-   Key_Tab, Key_Backspace, Key_LeftShift, Key_Escape,
+   Key_Tab, Key_Backspace, LockLayer(FUNCTION), Key_Escape,
    ShiftToLayer(FUNCTION),
 
    ___, Key_6, Key_7,    Key_8,     Key_9,      Key_0,            ___,
    ___, Key_Y, Key_U,    Key_I,     Key_O,      Key_P,            Key_Equals,
         Key_H, SFT_T(J), CTL_T(K),  ALT_T(L),   GUI_T(Semicolon), Key_Quote,
    ___, Key_N, Key_M,    Key_Comma, Key_Period, Key_Slash,        Key_Minus,
-   Key_LeftGui, Key_LeftShift, Key_Spacebar, Key_Enter,
+   ___, LockLayer(FUNCTION), Key_Spacebar, Key_Enter,
    ShiftToLayer(FUNCTION)),
 
   [FUNCTION] =  KEYMAP_STACKED
@@ -147,7 +147,7 @@ KEYMAPS(
    Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
-   ___, ___, Key_Enter, ___,
+   ___, ___, ___, ___,
    ___)
 	) // KEYMAPS(
 
