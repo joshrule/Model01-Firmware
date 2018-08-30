@@ -122,16 +122,16 @@ KEYMAPS(
 
   [PRIMARY] = KEYMAP_STACKED
   (___,          Key_1,    Key_2,    Key_3,    Key_4,    Key_5, Key_LEDEffectNext,
-   Key_Backtick, Key_Q,    Key_W,    Key_E,    Key_R,    Key_T, Key_LeftControl,
+   Key_Backtick, Key_Q,    Key_W,    Key_E,    Key_R,    Key_T, ___,
    ___,          GUI_T(A), ALT_T(S), CTL_T(D), SFT_T(F), Key_G,
-   ___,          Key_Z,    Key_X,    Key_C,    Key_V,    Key_B, Key_LeftAlt,
+   ___,          Key_Z,    Key_X,    Key_C,    Key_V,    Key_B, ___,
    Key_Tab, Key_Backspace, Key_LeftShift, Key_Escape,
    ShiftToLayer(FUNCTION),
 
-   ___,             Key_6,    Key_7,    Key_8,     Key_9,            Key_0,         ___,
-   Key_LeftControl, Key_Y,    Key_U,    Key_I,     Key_O,            Key_P,         Key_Equals,
-   Key_H,           SFT_T(J), CTL_T(K), ALT_T(L),  GUI_T(Semicolon), Key_Quote,
-   Key_LeftAlt,     Key_N,    Key_M,    Key_Comma, Key_Period,       Key_Slash,     Key_Minus,
+   ___, Key_6, Key_7,    Key_8,     Key_9,      Key_0,            ___,
+   ___, Key_Y, Key_U,    Key_I,     Key_O,      Key_P,            Key_Equals,
+        Key_H, SFT_T(J), CTL_T(K),  ALT_T(L),   GUI_T(Semicolon), Key_Quote,
+   ___, Key_N, Key_M,    Key_Comma, Key_Period, Key_Slash,        Key_Minus,
    Key_LeftGui, Key_LeftShift, Key_Spacebar, Key_Enter,
    ShiftToLayer(FUNCTION)),
 

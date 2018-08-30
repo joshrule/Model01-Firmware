@@ -5,7 +5,6 @@ This is [Josh Rule]'s work-in-progress personalized firmware sketch for the [Key
 ## Notes
 
 - Qukey `GUI`, `Alt`, `Control`, and `Shift` have been placed on the home row.
-- `Control` and `Alt` have been moved to be the innermost keys on each side.
 - The thumb clusters have been reorganized.
   - Left: `Tab`, `Backspace`, `Shift`, `Escape`
   - Right: `GUI`, `Shift`, `Space`, `Enter`
