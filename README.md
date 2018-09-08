@@ -7,9 +7,8 @@ This is [Josh Rule]'s work-in-progress personalized firmware sketch for the [Key
 ## Notes
 
 - Qukey `GUI`, `Alt`, `Control`, and `Shift` have been placed on the home row.
-- The thumb clusters have been reorganized.
-  - Left: `Tab`, `Backspace`, `LockLayer(FUNCTION)`, `Escape`
-  - Right: `___`, `LockLayer(FUNCTION)`, `Space`, `Enter`
+- Thumb `FN` keys toggle function layer; palm `FN` keys shift to function layer.
+- `Shift`s are one-shot.
 
 ## Usage
 
