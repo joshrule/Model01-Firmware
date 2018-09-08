@@ -2,6 +2,8 @@
 
 This is [Josh Rule]'s work-in-progress personalized firmware sketch for the [Keyboardio Model 01].
 
+[![Layout](img/layout.png)](http://www.keyboard-layout-editor.com/#/gists/38d7ebfc152cfd7bb670421d1cec8b38)
+
 ## Notes
 
 - Qukey `GUI`, `Alt`, `Control`, and `Shift` have been placed on the home row.
