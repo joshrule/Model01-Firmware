@@ -134,21 +134,23 @@ KEYMAPS(
    ___, Key_N, Key_M,    Key_Comma, Key_Period, Key_Slash,        Key_Minus,
    ___, LockLayer(FUNCTION), Key_Spacebar, Key_Enter,
    ShiftToLayer(FUNCTION)),
+   ___,
+   ___, ___, ___, ___,
 
   [FUNCTION] =  KEYMAP_STACKED
-  (Key_Home,     Key_F1,     Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_CapsLock,
-   Key_PageUp,   ___,        Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
-   Key_PageDown, Key_mouseL, Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
-   Key_End,      ___,        ___,         ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
-   ___, Key_Delete, ___, ___,
-   ___,
+   (___, ___, ___, ___, ___, ___, ___,
+    ___, ___, ___, ___, ___, ___, ___,
+    ___, ___, ___, ___, ___, ___,
+    ___, ___, ___, ___, ___, ___, ___,
+    ___, ___, ___, ___,
+    ___,
 
-   Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
-   Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
-                               Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
-   Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
-   ___, ___, ___, ___,
-   ___)
+    ___, ___, ___,                  ___,                   ___,             ___,              ___,
+    ___, ___, Key_LeftCurlyBracket, Key_RightCurlyBracket, Key_LeftBracket, Key_RightBracket, ___,
+         ___, ___,                  ___,                   ___,             ___,              ___,
+    ___, ___, ___,                  ___,                   ___,             Key_Backslash,    Key_Pipe,
+    ___, ___, ___, ___,
+    ___)
 	) // KEYMAPS(
 
 // Re-enable astyle's indent enforcement.
